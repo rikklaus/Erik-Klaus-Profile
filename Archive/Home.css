@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+	font-family: 'Space Mono';
+	background-color: #000000;
+}
+
+p {
+	text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+}
+
+.container {
+	color: #ffffff;
+	font-size: 2.26rem;
+	text-transform: capitalize;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.animation {
+	height: 50px;
+	overflow: hidden;
+	margin-left: 1rem;
+}
+
+.animation>div>div {
+	padding: 0.25rem 0.75rem;
+	height: 2.81rem;
+	margin-bottom: 2.51rem;
+	display: inline-block;
+}
+
+.animation div:first-child {
+	animation: text-animation 8s infinite;
+}
+
+.first div {
+	background-color: #3157ff;
+}
+
+.second div {	
+	background-color: #0e9c8b;
+}
+
+.third div {
+	background-color: #fa26b0;
+}
+
+@keyframes text-animation {
+	0% {
+		margin-top: 0;
+	}
+
+	10% {
+		margin-top: 0;
+	}
+
+	20% {
+		margin-top: -5.62rem;
+	}
+
+	30% {
+		margin-top: -5.62rem;
+	}
+
+	40% {
+		margin-top: -11.24rem;
+	}
+
+	60% {
+		margin-top: -11.24rem;
+	}
+
+	70% {
+		margin-top: -5.62rem;
+	}
+
+	80% {
+		margin-top: -5.62rem;
+	}
+
+	90% {
+		margin-top: 0;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+	margin:0;
+  }
+  
+  button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 2.9em;
+    line-height: 2.5em;
+    margin-top: 100px;
+    position: fixed;
+	top:42%;
+	left:43%;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+  }
+  
+  button:hover:before {
+    top: -50px;
+    left: -16px;
+  }
+  
+  button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+
+  
